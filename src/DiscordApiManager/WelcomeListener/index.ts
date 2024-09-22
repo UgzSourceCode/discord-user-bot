@@ -1,1 +1,1 @@
-export {initWelcomeListener} from "./welcomeListener";
+export { initWelcomeListener } from "./welcomeListener";

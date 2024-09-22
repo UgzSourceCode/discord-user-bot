@@ -1,2 +1,2 @@
-export {runDiscordApiManager} from "./discrodApiManager";
-export {DiscordListener} from "./types";
+export { runDiscordApiManager } from "./discrodApiManager";
+export { DiscordListener } from "./types";

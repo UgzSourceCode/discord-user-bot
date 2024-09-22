@@ -1,1 +1,1 @@
-export {initListenerManager} from "./listenerManager";
+export { initListenerManager } from "./listenerManager";
