@@ -22,8 +22,8 @@ export const runDiscordApiManager = ({
 		discordAPIToken,
 	);
 
-	for(const listener of listenerManager.getAllListeners()) {
-		client.on((listener.event), listener.method);
+	for (const listener of listenerManager.getAllListeners()) {
+		client.on(listener.event, listener.method);
 		createLog.info(`Discord subscribed to ${listener.name}`);
 	}
 };
