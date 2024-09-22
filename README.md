@@ -5,10 +5,67 @@ A basic bot that sends a welcome message, with potential for more features in th
 
 It is working on discord server [Order of Devs Community](https://discord.gg/bqvfTcFMYu).
 
+## Table Of Content
+
+ - [Description](#description)
+ - [Commands](#commands)
+ - [Prerequisites](#prerequisites)
+ - [Quick Start Guide](#quick-start-guide)
+   - [Using Docker](#using-docker)
+   - [Without Docker](#without-docker)
+ - [Dependencies](#dependencies)
+ - [Development Dependencies](#development-dependencies)
+ - [Links](#links)
+
 ## Commands
- - "npm start" - runs the application
- - "npm run dev" - runs the application in watch mode
+ - "start" - runs the application
+
+How to run it:
+```bash
+npm start
+```
+
+ - "dev" - runs the application in watch mode
+
+How to run it:
+```bash
+npm dev
+```
+
  - "docker build -t discord-bot ." - build the Docket image
+
+How to run it:
+```bash
+docker build -t discord-bot .
+```
+
+ - "format" - runs the Biome.js to format all (js, jsx, ts, tsx, json) files in src directory
+
+How to run it:
+```bash
+npm run format
+```
+
+ - "format:check" - runs the Biome.js to check the formatting all (js, jsx, ts, tsx, json) files in src directory
+
+How to run it:
+```bash
+npm run format:check
+```
+
+ - "lint:check" - runs the Biome.js to check only linting issues in files (js, jsx, ts, tsx, json)
+
+How to run it:
+```bash
+npm run lint:check
+```
+
+ - "lint:fix" - runs the Biome.js to check for linting issues and automatically fix them in files (js, jsx, ts, tsx, json)
+
+How to run it:
+```bash
+npm run lint:fix
+```
 
 ## Prerequisites
 - Node.js
@@ -44,7 +101,7 @@ There is an example configuration in the `.env-sample` file. Please create a `.e
 docker run --env-file .env discord-bot
 ```
 
-### Without docker
+### Without Docker
 1. Clone repository:
 
 Command for SSH
