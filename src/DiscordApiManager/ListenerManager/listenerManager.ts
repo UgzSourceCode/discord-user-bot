@@ -1,6 +1,6 @@
-import { ClientEvents, ClientOptions } from "discord.js";
+import type { ClientEvents, ClientOptions } from "discord.js";
 import { getAllIntents } from "./utils";
-import { DiscordListener } from "../";
+import type { DiscordListener } from "../";
 
 export const initListenerManager = () => {
 	const listeners: DiscordListener<keyof ClientEvents>[] = [];

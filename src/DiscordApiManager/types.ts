@@ -1,4 +1,4 @@
-import { ClientEvents, ClientOptions } from "discord.js";
+import type { ClientEvents, ClientOptions } from "discord.js";
 
 export interface DiscordListener<Event extends keyof ClientEvents> {
 	name: string;

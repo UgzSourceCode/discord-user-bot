@@ -2,8 +2,8 @@ import { prepareClientAndLogin } from "./login";
 import { initListenerManager } from "./ListenerManager";
 import { createLog } from "../utils";
 import { initWelcomeListener } from "./WelcomeListener";
-import { ClientEvents, Message } from "discord.js";
-import { DiscordListener } from "./types";
+import { type ClientEvents, Message } from "discord.js";
+import type { DiscordListener } from "./types";
 
 interface DiscordApiManagerProps {
 	discordAPIToken: string;
@@ -22,8 +22,8 @@ export const runDiscordApiManager = ({
 		discordAPIToken,
 	);
 
-	listenerManager.getAllListeners().forEach((listener) => {
-		client.on(listener.event, listener.method);
+	for(const listener of listenerManager.getAllListeners()) {
+		client.on((listener.event), listener.method);
 		createLog.info(`Discord subscribed to ${listener.name}`);
-	});
+	}
 };

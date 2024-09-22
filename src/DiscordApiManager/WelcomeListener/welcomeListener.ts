@@ -1,5 +1,5 @@
-import { DiscordListener } from "../types";
-import { Message, MessageType } from "discord.js";
+import type { DiscordListener } from "../types";
+import { type Message, MessageType } from "discord.js";
 import { createLog } from "../../utils";
 import { getRandomItemFromArray } from "./utils";
 import { WELCOME_MESSAGES, WelcomeMessagesParams } from "./data";

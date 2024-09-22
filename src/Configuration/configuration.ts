@@ -1,7 +1,7 @@
 import path from "node:path";
 import * as fs from "node:fs";
 
-import { Configuration } from "./types";
+import type { Configuration } from "./types";
 
 import { createLog } from "../utils/logger";
 

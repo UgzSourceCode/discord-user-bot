@@ -1,4 +1,4 @@
-import { Client, ClientOptions, Events } from "discord.js";
+import { Client, type ClientOptions, Events } from "discord.js";
 import { createLog } from "../utils";
 
 export const prepareClientAndLogin = (
